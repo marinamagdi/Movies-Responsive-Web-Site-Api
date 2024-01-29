@@ -1,0 +1,52 @@
+<div class="p-4">
+    <input type="text" class="form-control" [(ngModel)]="term">
+</div>
+<div class="row ">
+    
+    <div class="col-md-4">
+        <div class="brdr w-25 mb-3"></div>
+       <h2 class="h5 ">Trending Movies <br>To Watch Right Now</h2>
+       <p class=" py-2" style="color: rgb(149, 143, 143);">Most Watched Movies By The Day</p>
+        <div class="brdr w-100 mb-3"></div>
+
+    </div>
+<div *ngFor="let item of trendingMovies|search:term"  class="col-md-2">
+    <app-media-item [item]="item"></app-media-item>
+</div>
+
+</div>
+<div class="row py-5">
+    <div class="col-md-4">
+        <div class="brdr w-25 mb-3"></div>
+       <h2 class="h5 ">Trending TvShows <br>To Watch Right Now</h2>
+       <p class=" py-2" style="color: rgb(149, 143, 143);">Most Watched TvShows By The Day</p>
+        <div class="brdr w-100 mb-3"></div>
+
+    </div>
+<div *ngFor="let item of trendingTv"  class="col-md-2">
+    <app-media-item [item]="item"></app-media-item>
+</div>
+
+</div>
+<div class="row py-5">
+   
+    <div class="col-md-4">
+        <div class="brdr w-25 mb-3"></div>
+       <h2 class="h5 ">Trending People <br>To Watch Right Now</h2>
+       <p class=" py-2" style="color: rgb(149, 143, 143);">Most Watched People By The Day</p>
+        <div class="brdr w-100 mb-3"></div>
+
+ 
+   </div>
+<div *ngFor="let item of trendingPeople"  class="col-md-2">
+    <app-media-item [item]="item"></app-media-item>
+</div>
+
+</div>
+  <!-- <div *ngFor="let array of trendingMovies" class="col-md-2">
+<div class="item position-relative">
+    <img class="w-100" [src]="'https://image.tmdb.org/t/p/w500'+array.backdrop_path" alt="">
+   <h3 class="h6  text-center py-3">{{array.original_title}}</h3>
+   <div class="vote position-absolute top-0 end-0 text-white p-1">{{array.vote_average.toFixed(1)}}</div>
+</div>
+    </div> -->

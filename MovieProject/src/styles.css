@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400&display=swap');
+:root{
+    --bg-main:#131722;
+    --light-bg:#24baef;
+    --main-font:font-family: 'Montserrat Alternates', sans-serif;
+    --text-color: #fff;
+    --border-color:#a8a8a83d;
+}
+body
+{
+    color: var(--text-color);
+}
+.bg-mine-light{
+    background-color: var(--light-bg);
+}
+body{
+background-color: var(--bg-main);
+font-family: var(--main-font);
+}
+a,a:hover{
+   color:var(--text-color);
+   text-decoration: none;
+}
+.input-mine{
+    background-color:transparent ;
+    color:var(--text-color);
+    border: solid 1px var(--border-color) ;
+}
+

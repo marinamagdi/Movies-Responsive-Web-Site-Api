@@ -1,0 +1,13 @@
+<div class="row ">
+    <div class="col-md-4">
+        <div class="brdr w-25 mb-3"></div>
+       <h2 class="h5 ">Trending Movies <br>To Watch Right Now</h2>
+       <p class=" py-2" style="color: rgb(149, 143, 143);">Most Watched Movies By The Day</p>
+        <div class="brdr w-100 mb-3"></div>
+
+    </div>
+<div *ngFor="let item of trendingMovies"  class="col-md-2">
+    <app-media-item [item]="item"></app-media-item>
+</div>
+
+</div>

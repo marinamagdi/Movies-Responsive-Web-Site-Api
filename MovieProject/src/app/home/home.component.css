@@ -1,0 +1,7 @@
+.brdr{
+    height: 1px;
+    background-color: var(--border-color);
+}
+.vote{
+    background-color: var( --light-bg);
+}
